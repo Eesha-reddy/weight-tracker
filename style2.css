@@ -1,0 +1,408 @@
+body {
+    margin: 0;
+   
+    background-color: #EEF7FF;
+}
+
+.container {
+    display: flex;
+    height: 50px;
+    background-color: #CDE8E5;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.logo {
+    flex: 0.5;
+    display: flex;
+    align-items: center; /* Center align logo */
+}
+
+.navbar {
+    display: flex;
+    gap: 100px; /* Adjusted gap for better spacing */
+    align-items: center; /* Center items vertically */
+}
+
+.navitems {
+    color: black;
+    font-size: 18px;
+}
+
+.a:link,
+.a:visited {
+    color: #4D869C;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.a:hover,
+.a:active {
+    color: black;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: none; /* Hide by default */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #4D869C;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dropbtn:hover {
+    color: black;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navitems {
+        display: none; /* Hide individual nav items */
+    }
+
+    .dropdown {
+        display: block; /* Display the dropdown */
+    }
+
+    .dropdown-content {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block; /* Show dropdown on hover */
+    }
+
+
+
+
+    .homebody{
+        display:flex;
+        flex-direction: column;
+        height: 90vh;
+        align-items: center;
+        
+      }
+    
+      .qoute{
+        order: 1;
+      }
+      .fitimg{
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        margin-top: 100px;
+      }
+    
+      h1{
+        font-size: 50px;
+      }
+    
+      .quote{
+        width: 40%;
+        margin-left: 100px;
+        
+      }
+
+
+    
+}
+
+
+.homebody{
+    display:flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+  .fitimg{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+
+  .quote{
+    width: 40%;
+    margin-left: 100px;
+    
+  }
+
+  #qoute{
+    margin-left: 50px;
+  }
+/* CSS */
+.button-1 {
+  
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  
+}
+
+
+.button-1:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-1:main,
+.button-1:focus {
+  user-select: auto;
+}
+
+.button-1:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-1:disabled {
+  cursor: auto;
+}
+
+.button-1:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+.wrapper1{
+    
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.button-2 {
+    border: none;
+    cursor: pointer;
+}
+
+.button-2:hover {
+    opacity: 0.8;
+}
+
+input {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+input:focus {
+    outline: 2px solid #CDE8E5;
+}
+
+input::placeholder {
+    color: #4D869C;
+}
+
+/* Button on top of the Input */
+.wrapper {
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.wrapper input {
+    background: white;
+    border: 2px solid #4D869C;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.wrapper .button-2 {
+    background: #CDE8E5;
+    border-radius: 50px;
+    aspect-ratio: 1;
+    height: 80%;
+    
+    position: absolute;
+    top: 10%;
+    right: 5px;
+}
+
+diet *{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+.container-2{
+    width: 100%;
+    min-width: 100vh;
+    background-color:#EEF7FF ;
+    color: #1A2130;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+.container-2 h1{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container-2 h1 .bi-journals{
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.container-2 button img{
+    width: 25px;
+    margin-right: 8px;
+}
+
+.container-2 button{
+    display: flex;
+    align-items: center;
+    background: #1899D6;
+    color: #FFFFFF;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background-color:#CDE8E5;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+
+.container-blog * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-post {
+    border: 1px solid #CDE8E5;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color:white ;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.blog-post h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color:#4D869C ;
+}
+
+.blog-post p {
+    font-size: 1em;
+    color: #7AB2B2;
+}
+
